@@ -12,7 +12,7 @@ def index(request):
         hgnm = request.GET.get('hgnm')
         hgnm = urllib.parse.quote("{}".format(hgnm))
         print(hgnm)
-        ServiceKey = "iBrqaeMXulVrNt5AYYwEbvMdm244rh7S2P5d13RqayCQCvD%2Fcqeh1IEb%2BS%2B%2FWTWz%2FQTYJMG5SxUdPMBadROD3w%3D%3D"
+        ServiceKey = ""
 
         url = "http://apis.data.go.kr/9710000/NationalAssemblyInfoService/getMemberNameInfoList?serviceKey=" + ServiceKey +"&hgnm="+hgnm+"&_type=json"
 
